@@ -9,7 +9,7 @@ export const Products = props => {
   const { setProductId } = props;
   const navigate = useNavigate();
   const singleProductId = localStorage.getItem('singleProductId');
-  const BASE = 'http://localhost:8080/api'
+  const BASE = 'https://horseplay-api.onrender.com/api'
   
   useEffect(() => {
     const getProducts = async () => {

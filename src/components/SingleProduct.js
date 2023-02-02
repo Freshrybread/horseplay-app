@@ -10,7 +10,7 @@ export const SingleProduct = props => {
   const userId = localStorage.getItem('userId');
   const guestId = localStorage.getItem('guestId');
   const singleProductId = localStorage.getItem('singleProductId');
-  const BASE = 'http://localhost:8080/api'
+  const BASE = 'https://horseplay-api.onrender.com/api'
   const navigate = useNavigate();
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = 'http://localhost:8080/api'
+const BASE = 'https://horseplay-api.onrender.com/api'
 
 export const userCheck = async token => {
   const response = await fetch(`${BASE}/users/me`, {

@@ -26,7 +26,7 @@ const App = () => {
 
   const currentToken = localStorage.getItem('token');
   const guestId = localStorage.getItem('guestId');
-  const BASE = 'http://localhost:8080/api'
+  const BASE = 'https://horseplay-api.onrender.com/api'
 
   const checkForGuests = async () => {
     const response = await fetch(`${BASE}/guestusers`, {

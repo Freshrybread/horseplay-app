@@ -4,7 +4,7 @@ import './Admin.css';
 export const Admin = () => {
   const [users, setUsers] = useState([]);
   const token = localStorage.getItem('token');
-  const BASE = 'http://localhost:8080/api'
+  const BASE = 'https://horseplay-api.onrender.com/api'
 
   useEffect(() => {
     const getUsers = async token => {

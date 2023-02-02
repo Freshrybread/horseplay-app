@@ -10,7 +10,7 @@ export const GuestOrders = () => {
   const guestId = localStorage.getItem('guestId');
   const shippingAndHandling = 10;
   const tax = subtotal * 0.1;
-  const BASE = 'http://localhost:8080/api'
+  const BASE = 'https://horseplay-api.onrender.com/api'
   const navigate = useNavigate();
 
   useEffect(() => {
