@@ -1,6 +1,6 @@
 const { Client } = require('pg');
 const connectionString =
-  process.env.DATABASE_URL || 'postgres://localhost:5432/horseplay-dev';
+  process.env.DATABASE_URL || 'postgres://localhost:5432/horseplay_dev';
 
 
 

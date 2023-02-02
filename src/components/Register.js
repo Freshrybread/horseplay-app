@@ -12,7 +12,7 @@ export const Register = props => {
   const [createFirstName, setCreateFirstName] = useState('');
   const [createLastName, setCreateLastName] = useState('');
   const [createEmail, setCreateEmail] = useState('');
-  const BASE = 'http://localhost:3000/api'
+  const BASE = 'http://localhost:8080/api'
 
   let navigate = useNavigate();
 

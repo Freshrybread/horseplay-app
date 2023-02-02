@@ -10,7 +10,7 @@ export const GuestOrders = () => {
   const guestId = localStorage.getItem('guestId');
   const shippingAndHandling = 10;
   const tax = subtotal * 0.1;
-  const BASE = 'http://localhost:3000/api'
+  const BASE = 'http://localhost:8080/api'
   const navigate = useNavigate();
 
   useEffect(() => {

@@ -26,7 +26,7 @@ const App = () => {
 
   const currentToken = localStorage.getItem('token');
   const guestId = localStorage.getItem('guestId');
-  const BASE = 'http://localhost:3000/api'
+  const BASE = 'http://localhost:8080/api'
 
   const checkForGuests = async () => {
     const response = await fetch(`${BASE}/guestusers`, {

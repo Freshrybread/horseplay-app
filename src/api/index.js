@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = 'http://localhost:3000/api'
+const BASE = 'http://localhost:8080/api'
 
 export const userCheck = async token => {
   const response = await fetch(`${BASE}/users/me`, {

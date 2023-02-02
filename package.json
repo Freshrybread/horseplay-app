@@ -7,11 +7,13 @@
     "seed:dev": "nodemon ./db/seed.js",
     "seed": "node ./db/seed.js",
     "start:dev": "nodemon server.js",
-    "start": "node server.js",
+    "server": "node server.js",
     "start:react": "react-scripts start",
     "serve": "webpack serve --mode development",
     "build": "webpack",
-    "build:dev": "npm run build -- --watch --mode=development"
+    "build:dev": "npm run build -- --watch --mode=development",
+    "client": "react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -43,6 +45,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "html-webpack-plugin": "^5.5.0",
     "nodemon": "^2.0.20"
   },
